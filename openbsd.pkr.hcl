@@ -187,6 +187,9 @@ source "qemu" "qemu" {
   iso_urls = [
     "https://cdn.openbsd.org/pub/OpenBSD/${local.image_full_remote_path}",
     "https://ftp.eu.openbsd.org/pub/OpenBSD/${local.image_full_remote_path}",
+    "https://cloudflare.cdn.openbsd.org/pub/OpenBSD/${local.image_full_remote_path}",
+    "https://mirror.planetunix.net/pub/OpenBSD/${local.image_full_remote_path}",
+    "https://openbsd.as250.net/pub/OpenBSD/${local.image_full_remote_path}"
   ]
 
   http_directory = "."
