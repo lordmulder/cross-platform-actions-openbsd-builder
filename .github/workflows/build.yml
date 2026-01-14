@@ -67,6 +67,9 @@ jobs:
       # - name: Setup tmate session
       #   uses: mxschmitt/action-tmate@v3
 
+      - name: Free Disk Space
+        uses: jlumbroso/free-disk-space@main
+
       - name: Build Image
         run: |
           PACKER_LOG=1 ./build.sh \
